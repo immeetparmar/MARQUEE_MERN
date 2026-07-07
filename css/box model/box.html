@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Box Model</title>
+<style>
+  * { box-sizing: border-box; }
+
+  html, body {
+    width: 100%;
+    height: 100%;
+  }
+
+  body {
+    background: #fff;
+    margin: 0;
+    padding: 24px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+  }
+
+  .card {
+    width: 100%;
+    background: #fff;
+    position: relative;
+    padding: 0;
+  }
+
+  .hero {
+    background: #f4816a;
+    border: 3px solid #000;
+    padding: 28px 24px;
+    margin-bottom: 14px;
+  }
+
+  .hero h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+    color: #1a1a1a;
+
+  }
+
+  .row {
+    background: #a9d6e5;
+    border: 6px solid #0b0b6b;
+    padding: 14px 18px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #222;
+  }
+
+  .bullets {
+    list-style: none;
+    margin: 0 0 16px 0;
+    padding: 0 0 0 18px;
+  }
+
+  .bullets li {
+    position: relative;
+    padding: 3px 8px;
+    margin-left: 30px;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #d63384;
+    width: fit-content;
+  }
+
+  .bullets li::before {
+    content: "•";
+    position: absolute;
+    left: -16px;
+    color: #d63384;
+  }
+
+  .bullets li.highlight {
+    background: #ffe600;
+    width: calc(100% - 8px);
+  }
+
+  .section-title {
+    font-size: 22px;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin: 0 0 10px 4px;
+  }
+
+  .bg-row {
+    display: flex;
+    align-items: center;
+    gap: 0;
+  }
+  .xyz{
+    padding: 0;
+  }
+
+  .bg-tag {
+    background: #fff;
+    border: 2px solid #000;
+    font-size: 11px;
+    font-family: 'Courier New', monospace;
+    padding: 8px 10px;
+    margin: 0 6px;
+    white-space: nowrap;
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="hero">
+    <h1 >Box Model</h1>
+  </div>
+
+  <div class="row">Every element on the page has its own box, which can be styled using CSS.</div>
+
+  <div class="row">From the inside out:</div>
+
+  <ul class="bullets">
+    <li class="highlight">content</li>
+    <li>padding</li>
+    <li class="highlight">border</li>
+    <li>margin</li>
+  </ul>
+
+  <div class="section-title">Background</div>
+
+  <div class="row bg-row xyz">
+    <span>Keep in mind that a</span>
+    <span class="bg-tag">background</span>
+    <span>will cover the content and the padding.</span>
+  </div>
+</div>
+
+</body>
+</html>
