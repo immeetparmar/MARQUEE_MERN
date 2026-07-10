@@ -11,6 +11,15 @@
       }
       .images {
         border: 1px solid black;
+        padding: 6px;
+        display: inline-flex;
+        gap: 8px;
+        align-items: center;
+      }
+      .images img {
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
       }
       .links-parent {
         width: 100%;
@@ -19,6 +28,37 @@
       }
       ul li {
         border-bottom: 5px solid seashell;
+      }
+
+      table {
+        width: 100%;
+        max-width: 600px;
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+        text-align: left;
+      }
+      th,
+      td {
+        border: 1px solid #333;
+        padding: 8px 12px;
+      }
+      th {
+        background-color: #f9f9f9;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .bold-text {
+        font-weight: bold;
+      }
+      .caption-text {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        margin-top: 8px;
+        color: #333;
+        border: 1px solid #333;
+        padding: 8px 12px;
+        background-color: #fafafa;
       }
     </style>
   </head>
@@ -90,6 +130,46 @@
         </li>
       </ul>
     </div>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="4" class="text-center">Qualifications</th>
+        </tr>
+        <tr>
+          <th>Sno.</th>
+          <th>Name</th>
+          <th>Board</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="bold-text">1</td>
+          <td>10th</td>
+          <td>CBSE</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td class="bold-text">2</td>
+          <td>12th</td>
+          <td>CBSE</td>
+          <td>B</td>
+        </tr>
+        <tr>
+          <td class="bold-text">3</td>
+          <td>B.Tech</td>
+          <td>PU</td>
+          <td>A</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td class="caption-text" colspan="4">
+            This table contains the educational records
+          </td>
+        </tr>
+      </tfoot>
+    </table>
 
     <h2>Let's Connect</h2>
     <p>
