@@ -28,8 +28,8 @@ No build tools or dependencies are required — these are static HTML/CSS files.
 
 ## 🛠️ Tech Stack
 
-- **HTML5** – 91.7%
-- **CSS3** – 8.3%
+- **HTML5** – 85.9%
+- **CSS3** – 14.1%
 
 ## 📚 Topics Covered
 
